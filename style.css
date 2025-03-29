@@ -1,0 +1,66 @@
+/* Общие стили */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #87CEEB; /* Голубое небо */
+}
+
+/* Контейнер дома */
+.house {
+    position: relative;
+}
+
+/* Основание дома (прямоугольник) */
+.base {
+    width: 200px;
+    height: 150px;
+    background: #CD853F; /* Коричневый */
+    position: relative;
+}
+
+/* Крыша (треугольник) */
+.roof {
+    width: 0;
+    height: 0;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-bottom: 80px solid #8B0000; /* Темно-красный */
+    position: absolute;
+    top: -80px;
+    left: -20px;
+}
+
+/* Окно (круг) */
+.window {
+    width: 50px;
+    height: 50px;
+    background: #ADD8E6; /* Голубой */
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 75px;
+    border: 2px solid #000; /* Черная рамка */
+}
+
+/* Дверь (прямоугольник) */
+.door {
+    width: 40px;
+    height: 70px;
+    background: #8B4513; /* Темно-коричневый */
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+
+/* Дымоход (прямоугольник) */
+.chimney {
+    width: 25px;
+    height: 50px;
+    background: #696969; /* Серый */
+    position: absolute;
+    top: -60px;
+    right: 30px;
+}
